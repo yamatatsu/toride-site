@@ -8,9 +8,22 @@
     "deploy": "cdk deploy --profile yamatatsu-private-account"
   },
   "dependencies": {
+    "@aws-cdk/assets": "^0.28.0",
+    "@aws-cdk/aws-s3": "^0.28.0",
     "@aws-cdk/cdk": "^0.28.0",
     "@aws-cdk/cx-api": "^0.28.0",
-    "@aws-cdk/aws-s3": "^0.28.0",
+    "@aws-cdk/aws-autoscaling-api": "^0.28.0",
+    "@aws-cdk/aws-cloudwatch": "^0.28.0",
+    "@aws-cdk/aws-ec2": "^0.28.0",
+    "@aws-cdk/aws-events": "^0.28.0",
+    "@aws-cdk/aws-iam": "^0.28.0",
+    "@aws-cdk/aws-kms": "^0.28.0",
+    "@aws-cdk/aws-logs": "^0.28.0",
+    "@aws-cdk/aws-s3-notifications": "^0.28.0",
+    "@aws-cdk/aws-sqs": "^0.28.0",
+    "@aws-cdk/aws-stepfunctions": "^0.28.0",
+    "@aws-cdk/region-info": "^0.28.0",
+    "@aws-cdk/aws-lambda": "^0.28.0",
     "source-map-support": "^0.5.9"
   },
   "devDependencies": {
