@@ -6,12 +6,14 @@
     "cdk": "dotenv cdk",
     "synth": "dotenv cdk synth",
     "deploy": "dotenv cdk deploy --profile $AWS_PROFILE",
-    "bootstrap": "dotenv cdk bootstrap $AWS_CDK_BOOTSTRAPPING_ENVIRONMENT --profile $AWS_PROFILE"
+    "bootstrap": "dotenv cdk bootstrap $AWS_CDK_BOOTSTRAPPING_ENVIRONMENT --profile $AWS_PROFILE",
+    "s3:ls:content:blog": "dotenv aws --profile=$AWS_PROFILE s3 ls s3://toride-kosodate-matome/content/blog/"
   },
   "dependencies": {
     "@aws-cdk/assets": "^0.28.0",
     "@aws-cdk/aws-autoscaling-api": "^0.28.0",
     "@aws-cdk/aws-cloudwatch": "^0.28.0",
+    "@aws-cdk/aws-cognito": "^0.28.0",
     "@aws-cdk/aws-ec2": "^0.28.0",
     "@aws-cdk/aws-events": "^0.28.0",
     "@aws-cdk/aws-iam": "^0.28.0",

@@ -1,16 +1,27 @@
 {
   "name": "toride-kosodate-matome",
+  "description": "made on progress....",
   "version": "1.0.0",
   "private": true,
   "author": "yamatatsu <the.kinnikuman@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build-site": "tools/build-site.sh"
+  },
+  "bugs": {
+    "url": "https://github.com/yamatatsu/toride-site/issues"
+  },
+  "homepage": "https://toride-kosodate-matome-site.netlify.com/",
+  "keywords": [
+    "gatsby",
+    "netlify",
+    "aws cdk"
+  ],
+  "repository": "github:yamatatsu/toride-site",
   "workspaces": {
     "packages": [
       "modules/*"
     ]
-  },
-  "scripts": {
-    "build-site": "tools/build-site.sh"
   },
   "devDependencies": {
     "prettier": "^1.16.4",
