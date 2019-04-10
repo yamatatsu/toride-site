@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "cdk": "cdk",
-    "synth": "cdk synth",
-    "deploy": "cdk deploy --profile yamatatsu-private-account"
+    "cdk": "dotenv cdk",
+    "synth": "dotenv cdk synth",
+    "deploy": "dotenv cdk deploy --profile $AWS_PROFILE"
   },
   "dependencies": {
     "@aws-cdk/assets": "^0.28.0",
