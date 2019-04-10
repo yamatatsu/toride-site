@@ -9,6 +9,9 @@
       "modules/*"
     ]
   },
+  "scripts": {
+    "build-site": "tools/build-site.sh"
+  },
   "devDependencies": {
     "prettier": "^1.16.4",
     "typescript": "^3.4.2",
