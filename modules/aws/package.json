@@ -6,7 +6,7 @@
     "cdk": "dotenv cdk",
     "synth": "dotenv cdk synth",
     "deploy": "dotenv cdk deploy --profile $AWS_PROFILE",
-    "deploy2": "dotenv cdk bootstrap $AWS_CDK_BOOTSTRAPPING_ENVIRONMENT --profile $AWS_PROFILE"
+    "bootstrap": "dotenv cdk bootstrap $AWS_CDK_BOOTSTRAPPING_ENVIRONMENT --profile $AWS_PROFILE"
   },
   "dependencies": {
     "@aws-cdk/assets": "^0.28.0",
