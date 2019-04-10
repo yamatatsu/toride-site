@@ -4,6 +4,7 @@ import s3 = require("@aws-cdk/aws-s3")
 import lambda = require("@aws-cdk/aws-lambda")
 
 const bucketName = process.env.BUCKET_NAME
+const NETLIFY_BUILD_WEBHOOK_URL = process.env.NETLIFY_BUILD_WEBHOOK_URL
 
 export class AwsStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
@@ -14,15 +15,13 @@ export class AwsStack extends cdk.Stack {
     })
 
     const builderFunction = new lambda.Function(this, "BuilderFunction", {
-      code: new lambda.InlineCode(
-        `module.handler = (...args) => console.log('Called!!!. %o', args)`
-      ),
+      code: new lambda.AssetCode(__dirname + "/../lambda"),
       handler: "handler",
       runtime: lambda.Runtime.NodeJS810,
+      environment: {
+        NETLIFY_BUILD_WEBHOOK_URL,
+      },
       // timeout?: number,
-      // environment?: ,
-      //     [key: string]: any;
-      // };
       // functionName: string,
       // memorySize?: number,
       // initialPolicy?: iam.PolicyStatement[],

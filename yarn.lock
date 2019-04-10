@@ -117,6 +117,20 @@
     "@aws-cdk/aws-s3-notifications" "^0.28.0"
     "@aws-cdk/cdk" "^0.28.0"
 
+"@aws-cdk/aws-sns@^0.28.0":
+  version "0.28.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-sns/-/aws-sns-0.28.0.tgz#46487250614d0f63745e158f97c000d87627f204"
+  integrity sha512-sODq18dleHP9BWzaWKZFa8myrj8ga8NWxZkH/xX8ondnU92GyAuvr0vBUIi2ycvYiR5Z67ysPt479bYKTwG8Gg==
+  dependencies:
+    "@aws-cdk/aws-autoscaling-api" "^0.28.0"
+    "@aws-cdk/aws-cloudwatch" "^0.28.0"
+    "@aws-cdk/aws-events" "^0.28.0"
+    "@aws-cdk/aws-iam" "^0.28.0"
+    "@aws-cdk/aws-lambda" "^0.28.0"
+    "@aws-cdk/aws-s3-notifications" "^0.28.0"
+    "@aws-cdk/aws-sqs" "^0.28.0"
+    "@aws-cdk/cdk" "^0.28.0"
+
 "@aws-cdk/aws-sqs@^0.28.0":
   version "0.28.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-sqs/-/aws-sqs-0.28.0.tgz#81aaf212d38114a3b7668eee45e81c8d79a28616"
